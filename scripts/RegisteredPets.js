@@ -1,16 +1,16 @@
-import { getPets } from "./database.js"
+import { getPets } from "./database.js";
 
-const pets = getPets()
+const pets = getPets();
 
 export const RegisteredPets = () => {
-    let petHTML = "<ul>"
+    let petHTML = "<ul>";
 
     for (const pet of pets) {
-        petHTML += `<li>${pet.name}</li>`
+        petHTML += `<li>${pet.name}</li>`;
     }
 
-    petHTML += "</ul>"
+    petHTML += "</ul>";
 
-    return petHTML
-}
+    return petHTML;
+};
 
